@@ -22,6 +22,9 @@ body {
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 	background-image: url(../img/bg_612x612.jpeg);
 	color: var(--black);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 button:hover,
@@ -98,12 +101,14 @@ a:active {
 	font-weight: bold;
 	position: absolute;
 	top: 14px;
+	cursor: pointer;
 }
 
 /* Estilo del main */
 #contenido-principal {
 	margin: 0 10%;
 	padding: 20px 0;
+	flex: 1;
 }
 
 #contenido-principal > div {
@@ -170,7 +175,7 @@ textarea {
 	left: 15px;
 	padding: 0 4px;
 	background-color: var(--white);
-	color: var(--gray);
+	color: var(--transparent);
 	font-size: 1rem;
 	transition: 0.5s;
 	z-index: 0;
